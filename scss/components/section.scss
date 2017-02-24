@@ -1,0 +1,746 @@
+
+//  All Sections
+
+
+/*--------------------------------------*/
+/*       Hero 	 	*/
+/*--------------------------------------*/
+
+section.hero {
+	position: relative;
+
+	h2 {
+		position: absolute;
+		left: 50px;
+	}
+
+	h3 {
+		margin-top: 30px;
+	    	position: absolute;
+		top: 60px;
+		right: 70px;
+	}
+
+	img {
+		max-width: 100%;
+		height: 100%;
+	}
+
+	a {
+		color: $white;
+	}
+
+	.hero-text {
+		position: absolute;
+		top: 120px;
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
+@media ( min-width: 768px ) {
+	section.hero h3 {
+		top: 6px;
+	}
+}
+
+/*--------------------------------------*/
+/*       Splash 	*/
+/*--------------------------------------*/
+
+section.splash {
+
+	img {
+		position: relative;
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	h2 {
+		position: absolute;
+		left: 50px;
+		font-size: 20px;
+		z-index: 4;
+	}
+
+	h3 {
+	    	position: absolute;
+		margin-top: 30px;
+		top: 50px;
+		right: 70px;
+		font-size: 16px;
+		z-index: 4;
+	}
+
+	.frontpage {
+	        	/* To fill background */
+	        	min-height: 100%;
+	        	min-width: 1024px;
+	 
+	       	/* Scaling */
+	       	width: 100%;
+	      	height: auto;
+	 
+	           /* Position */
+	        	position: fixed;
+	       	top: 0;
+	        	left: 0;
+	}
+}
+
+@media ( min-width: 768px ) {
+	section.splash {
+		h2 {
+			font-size: 30px;
+		}
+
+		h3 {
+			font-size: 24px;
+		}
+	}
+}
+
+@media ( min-width: 400px ) {
+	section.splash {
+		h3 {
+			top: 40px;
+		}
+	}
+}
+
+@media ( min-width: 768px ) {
+	section.splash {
+		h3 {
+			top: 0;
+		}
+	}
+}
+
+
+/*--------------------------------------*/
+/*    Testimonial 	*/
+/*--------------------------------------*/
+
+section.testimonial {
+	margin-top: 40px;
+
+	.btn-default {
+		display: block;
+		margin: 30px auto;
+	}
+
+	h3 {
+		padding: 14px;
+	}
+
+	.fa {
+		margin-left: 8px;
+	}
+}
+
+/*--------------------------------------*/
+/*    Columns	 	*/
+/*--------------------------------------*/
+
+section.columns {
+	margin-top: 0;
+    	padding-bottom: 0;
+    	min-height: 400px;
+
+	p {
+		font-size: 16px;
+	}
+
+	img {
+		margin-top: 20px;
+		height: 250px;
+	}
+}
+
+@media ( min-width: 768px ) {
+	section.columns {
+		margin-top: 40px;
+		padding-bottom: 30px;
+	}
+}
+
+/*---------------------------------------*/
+/*   	Break		*/
+/*--------------------------------------*/
+
+section.break {
+	margin-top: 40px;
+	font-size: 14px;
+	//padding-bottom: 30px;  Only used if a background colour is specified.
+
+	hr {
+		border-top: 1px solid $black;
+	}
+    
+}
+
+
+/*--------------------------------------*/
+/*	Slideshow      */
+/*--------------------------------------*/
+
+section.slideshow {
+	position: relative;
+	height: 300px;
+    	margin-bottom: 40px;
+	padding-bottom: 30px;
+	// background-color: $white;
+
+
+	.slide {
+		background-position: center center;
+		background-repeat: no-repeat;
+		background-attachment: cover;
+		width: 100%;
+		height: 300px;
+	}
+
+	.owl-item {
+		float: left;
+		display: block;
+	}
+
+	.owl-controls {
+		display: inline-block;
+    		margin-bottom: 50px;
+	}
+
+	.owl-wrapper-outer {
+		overflow: hidden;
+	}
+
+	.owl-prev {
+		position: absolute;
+		top: 90%;
+		left: 10%;
+		margin-top: -30px;
+		height: 60px;
+		width: 60px;
+		font-size: 10px;
+		line-height: 60px;
+		color: $white;
+		text-align: center;
+		z-index: 5;
+		cursor: pointer;
+	}
+
+	.owl-next {
+		position: absolute;
+		top: 90%;
+		right: 10%;
+		margin-top: -30px;
+		height: 60px;
+		width: 60px;
+		font-size: 10px;
+		line-height: 60px;
+		color: $white;
+		text-align: center;
+		z-index: 5;
+		cursor: pointer;
+	}
+
+	img {
+		width: auto;
+		height: 100%;
+		padding: 20px 0;
+	}
+
+	h4 {
+
+	}
+}
+
+@media ( min-width: 770px ) {
+	section.slideshow {
+
+		.owl-prev, .owl-next {
+			font-size: 14px;
+			top: 60%;
+			color: $black;
+		}
+ 	}
+}
+
+@media ( min-width: 768px ) {
+	section.slideshow {
+		height: 500px;
+
+		.slide {
+			height: 500px;
+		}
+	}
+}
+
+
+
+/*--------------------------------------*/
+/*         Gallery   	*/
+/*--------------------------------------*/
+
+#gallery-fade {
+	position:fixed;
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	margin: 0;
+	padding: 0;
+	z-index: 100;
+}
+
+#gallery-modal {
+	display: none;
+	position: fixed;
+	margin: 0 auto;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 105;
+	text-align: center;
+
+	img {
+		display: none;
+		border: 2px solid $whitesmoke;
+		margin: 0 auto;
+	   	max-height: 500px;
+		z-index: 60;
+	}
+}
+
+section.gallery {
+	img {
+		border: 4px solid $whitesmoke;
+		box-shadow: rgba(0, 0, 0, 0.7) 2px 2px 4px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+}
+
+
+/*--------------------------------------*/
+/*     Sök Sektion     */
+/*--------------------------------------*/
+
+section.bread {
+
+	.breadcrumbs {
+		overflow: hidden;
+		line-height: 30px;
+		padding-left: 20px;
+		font-size: 14px;
+
+		> li {
+			display: inline-block;
+			margin-right: 6px;
+			color: $black;
+			font-size: 14px;
+
+			a {
+				color: $red;
+			}
+		}
+	}	
+}
+
+@media ( min-width: 768px ) {
+	section.bread .breadcrumbs {
+			line-height: 65px;
+			padding-left: 40px;
+			font-size: 18px;
+
+		> li {
+			font-size: 18px;
+			margin-right: 15px;
+		}
+	}
+}
+
+
+/*--------------------------------------*/
+/*       Sidebar         */
+/*--------------------------------------*/
+
+
+#sidebar {
+	border-bottom: 1px solid $black;
+	margin-bottom: 30px;
+	overflow: hidden;
+	padding: 30px;
+	list-style: none;
+	text-align: center;
+
+	ul {
+		margin: 0 0 0 8px;
+		padding: 0;
+	}
+
+	ul > li {
+		list-style: none;
+	}
+
+	a {
+		color: $black;
+		font-size: 14px;
+
+		&:hover {
+			color: $red;
+		}
+	}
+
+	h4 {
+		text-decoration: underline;
+	}
+}
+
+@media ( min-width: 768px ) {
+	#sidebar {
+		text-align: left;
+	}
+}
+
+
+/*--------------------------------------*/
+/*     Archives 	*/
+/*--------------------------------------*/
+
+section.archives {
+	margin-top: 40px;
+}
+
+/*--------------------------------------*/
+/*         Author         */
+/*--------------------------------------*/
+
+section.author {
+	margin-top: 40px;
+}
+
+/*--------------------------------------*/
+/*    Category          */
+/*--------------------------------------*/
+
+section.category {
+	margin-top: 40px;
+}
+
+.post-categories {
+	list-style: none;
+}
+
+/*--------------------------------------*/
+/*  	Blog 		*/
+/*--------------------------------------*/
+
+section.gear {
+	margin-top: 40px;
+}
+
+article {
+	background-color: rgba(242,242,242,0.5);
+	background-color: $white;
+	border-bottom: 2px solid $crimson;
+	overflow: hidden;
+	padding: 20px;
+	margin-bottom: 10px;
+
+	a {
+		color: $red;
+	}
+
+	.post-details {
+		display: inline-block;
+		list-style: none;
+		padding-left: 0;
+		overflow: hidden;
+
+		a {
+			color: $red;
+			font-size: 16px;
+		}
+		
+		> li {
+			//float: left;
+			display: inline-block;
+			font-size: 14px;
+
+			> .fa {
+				margin-right: 10px;
+				margin-left: 10px;
+			}
+		}
+	}
+
+	.fa {
+		margin-right: 10px;
+		color: $black;
+	}
+
+	.author-details {
+		display: inline-block;
+		list-style: none;
+		margin: 0;
+		padding: 0;
+
+		> li {
+			float: left;
+		}
+
+		.fa {
+			bottom: 0px;
+			color: $red;
+			margin-right: 10px;
+			margin-left: 10px;
+			font-size: 14px;
+		}
+	}	
+}
+
+.single-post-img {
+	margin-bottom: 30px;
+}
+
+.single-post-details {
+	list-style: none;
+	margin-top: 20px;
+	padding-left: 0;
+
+	a {
+		font-size: 16px;
+	}
+
+	> li {
+		font-size: 14px;
+		padding-top: 10px;
+	}
+}
+
+.box {
+	float: left;
+	background-color: rgba(242,242,242,0.5);
+	background-color: $white;
+	overflow: hidden;
+	padding: 30px;
+	margin-right: 0;
+	margin-bottom: 10px;
+	width: 100%;
+
+	a:hover {
+		color: $black;
+	}
+
+	i {
+		color: $black;
+
+		&:hover {
+			color: $red;
+		}
+	}	
+}
+
+.box2 {
+	margin-bottom: 10px;
+}
+
+.blog-feed {
+	img {
+		float: left;
+		width: 30%;
+		padding: 10px;
+		padding-top: 30px;
+		display: none;
+	}
+
+	.inner {
+		float: left;
+	}
+
+	.inner.first {padding-left: 0;}
+	.inner.last {padding-right: 0;}
+}
+
+@media ( min-width: 768px ) {
+	article {
+		padding: 30px;
+		margin-bottom: 30px;
+	}
+
+	.box {
+		width: 300px;
+		margin-right: 30px;
+	}
+
+	.blog-feed {
+
+		img {
+			display: block;
+		}
+
+		.inner {
+			width: 70%;
+		}
+
+		.inner.first {
+			padding-left: 30px;
+		}
+
+		.inner-last {
+			padding-right: 30px;
+		}
+	}
+}
+
+
+/*--------------------------------------*/
+/*       Pagination     */
+/*--------------------------------------*/
+
+
+.pagination {
+	margin: 30px 0 0;
+	text-align: center;
+	width: 100%;
+
+	a {
+		font-size: 14px;
+	}
+
+	h2 {
+		display: none;
+	}
+
+	> .page-numbers,
+	.page-numbers {
+		background-color: $brown;
+		color: $white;
+		display: inline-block;
+		margin: 0 4px;
+		padding: 4px 10px;
+		font-size: 14px;
+	}
+
+	> .page-numbers.current,
+	.page-numbers.current {
+		background-color: $white;
+		color: $brown;
+	}
+
+}
+
+.navigation-row {
+    	list-style: none;
+	text-align: center;
+	width: 100%;
+	padding: 0;
+	margin: 30px 0 0;
+	cursor: pointer;
+	font-size: 14px;
+
+	.new-posts {
+		background: white;
+	    	padding: 8px;
+
+		.fa {
+			padding-right: 10px;
+		}
+	}
+
+	.old-posts {
+	    	background: white;
+	    	padding: 8px;
+	    	margin-left: 3px;
+
+		.fa {
+			padding-left: 10px;
+		}
+	}
+
+	&-pages {
+		background: white;
+	    	padding: 8px;
+
+		a { 
+			padding: 0 6px;
+		}
+	}
+
+	.page-numbers.current {
+		padding: 0 6px;
+	}
+}
+
+@media ( min-width: 768px ) {
+	.navigation-row {
+		font-size: 18px;
+	}
+}
+
+
+/*--------------------------------------*/
+/*  	Blog 		*/
+/*--------------------------------------*/
+
+.cpt-taxonomy {
+	list-style: none;
+	display: inline-block;
+	padding: 0;
+	
+	li {
+		float: left;
+		margin-right: 3px;
+	} 
+
+	a {
+		font-size: 12px;
+	}
+}
+
+@media ( min-width: 768px ) {
+	.cpt-taxonomy {
+		li {
+			margin-right: 10px;
+		}
+		a {
+			font-size: 16px;
+		}
+		
+	}
+
+}
+
+/*--------------------------------------------------------*/
+/*   Templates (Margin-top)	 */
+/*-------------------------------------------------------*/
+
+section.single,
+section.video {
+	margin-top: 40px;
+}
+
+/*--------------------------------------*/
+/*       Templates     */
+/*--------------------------------------*/
+
+section.black {
+	background-color: #333;
+	color: $white;
+	margin-top: 40px;
+
+	&.columns .fa {
+		background-color: white;
+		color: #333;
+	}
+
+	h3 {
+		color: $black;
+	}
+
+	article {
+		margin-top: 30px;
+	}
+}

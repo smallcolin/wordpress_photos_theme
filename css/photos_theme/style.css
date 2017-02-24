@@ -1,0 +1,11 @@
+/*
+Theme Name: Photos Theme
+Author: Colin Sweeney
+Description: A Photography theme!
+Version: 1.0
+*/
+
+body {
+	color: black;
+	background-color: #f2f2f2;
+}

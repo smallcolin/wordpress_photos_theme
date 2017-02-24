@@ -1,0 +1,212 @@
+body {
+	color: $black;
+	background-color: #f2f2f2;
+	// background-attachment: fixed;
+	// background-repeat: no-repeat;
+	// background-size: cover;
+	position: relative;
+	font: {	
+		family: $arvo, sans-serif !important;
+		size: 18px;
+	}
+}
+
+h1, h2 {
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+h3 {
+	
+}
+
+a {
+	color: $red;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+iframe {
+	margin-bottom: 30px;
+}
+
+.btn {
+	margin: 30px 0;
+    	color: $white;
+
+}
+    .btn:hover {
+    	background-color: $white;
+    	color: $black;
+    	border: 1px solid $black;
+    }
+
+form {
+	input.form, textarea.form {
+		width: 100%;
+	}
+
+	label.form {
+		margin: 10px 0;
+	}
+
+	.btn.form {
+		width: 25%;
+	}
+}
+
+ // Ninja Forms
+
+.nf-form-fields-required {
+	display: none;
+}
+
+.nf-field-label {
+	margin: 0 auto;
+}
+
+.nf-form-title h3 {
+	font-size: 18px;
+	margin-bottom: 20px;
+}
+
+// #nf-field-8-wrap:after {
+// 	font-family: 'FontAwesome';
+//  	content: "\f003";
+//  	margin: 30px 0 0 55%;
+// }
+
+#nf-field-8 {
+	width: 25%;
+}
+
+#nf-field-5, #nf-field-6, 
+#nf-field-7, #nf-field-10 {
+	width: 100%;
+}
+
+
+#wrap {
+	background-color: $lightgrey ;
+}
+
+#main {
+	display: block;
+	background-image: url('');
+	background-size: cover;
+	background-color: #f2f2f2;
+	min-height: 500px;
+	width: 100%;
+	padding: 10px 0;
+	margin: 0 auto;
+	@include clearfix;
+}
+
+.centered {
+	margin: 0 auto;
+}
+
+.aligncenter {
+	text-align: center;
+}
+
+.container-fluid {
+	padding: 0;
+}
+
+.space {
+	margin-top: 60px !important;
+}
+
+.margin-top {
+	margin-top: 40px;
+}
+
+.border-bottom {
+	border-bottom: 1px solid $grey;
+}
+
+.no-padding {
+	padding: 0;
+}
+
+.fa-bars, .fa-times {
+	color: $black;
+}
+
+.vimeo {
+	margin-top: 40px;
+}
+
+.img-zoom {
+	width: 300px;
+	transition: .2s ease-in-out;
+
+	&:hover {
+		width: 320px;
+	}
+}
+
+.transition {
+	transform: scale(1.1,1.1);
+}
+
+.required {
+	font-size: 14px;
+}
+
+.title {
+	padding: 0;
+}
+
+article.video {
+	padding: 20px;
+
+	.fa {
+		margin-left: 8px;
+	}
+
+	.fa-youtube,
+	.fa-vimeo {
+		color: $red;
+
+		&:hover {
+			color: $black;
+		}
+	}
+}
+
+@media ( min-width: 768px ) {
+	#main {
+		padding: 40px 20px;
+	}
+
+	.space {
+		margin-top: 30px !important;
+	}
+
+	.title {
+		padding: 30px;
+	}
+}
+
+
+
+/*-----------------------------------------------------------------------------------*/
+/*    MEDIA TYPES (GENERAL CSS)   */
+/*----------------------------------------------------------------------------------*/
+
+@media ( min-width: 768px ) {
+	form {
+		input.form, textarea.form {
+			width: 70%;
+		}
+	}
+	#nf-field-5, #nf-field-6, 
+	#nf-field-7, #nf-field-10 {
+		width: 70%;
+	}
+}
