@@ -15,19 +15,34 @@ Admin Panel
 6.  Go back to Plugins/Add New.  Find, install & activate the plugin, "Ninja Forms".
 7.  Go down to the newly created side option, "Ninja Forms".  In Import/Export, import in the "any_questions_ninja_forms.nff"V file found in the Extras folder.
 
+First up is your options
+1.  Go to Options in your admin panel
+      •  Upload a logo (if you have one)
+      •  Enter some footer details.  eg. About, Contact, Social Media links & Copyright
+      •  Choose where to link some internal button links on your site.  eg Blog(Gear) & Video
+      
 Time to Create Some Content…
-1.  In Pages, create the following…
-      •  Photos
-      •  Gear
-      •  About
-      •  Video
-      •  Contact
-Don't forget to delete the "Sample Page".
+In Pages, create the following…
+   •  Splash
+   •  Photos
+   •  Gear
+   •  About
+   •  Video
+   •  Contact
+   •  (Don't forget to delete the "Sample Page")
+   
+Once these pages are created go to Settings/Reading.  Change the Static Pages to Splash(Front-Page) & Gear(Blog Posts).  Save changes.
 
-Photos
-1.  Choose "Full Width Page" in the Template option
-2.  Select your first ACF section.  To show all your galleries on this page the best option is to select Columns.
-3.  
+1. Splash
+  -  Select the Splash section
+  -  Fill in all the details.
+  -  Load up more than 1 photo for a nice change of scenery throughout the day
+  
+2.  Photos
+  -  Choose "Full Width Page" in the Template option
+  -  Select your first ACF section.  To show all your galleries on this page the best option is to select Columns.
+  -  Fill in the information & upload some cover photos for your galleries.
+  -  I would recommend only using columns & Testimonial sections on this page for maximum effect
 ```
 
 ## Required
